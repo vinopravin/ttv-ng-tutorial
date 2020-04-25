@@ -1,0 +1,23 @@
+.main-container{
+    height: 100%;
+    background: #dc0a62;
+    padding: 15px;
+}
+.ws-100p{
+    width: 100%;
+}
+.min-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.counter-div{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.counter-value{
+    font-size: 3em;
+}

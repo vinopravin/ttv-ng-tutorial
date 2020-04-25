@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component1Component implements OnInit {
 
+   count: number = 0;
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  DecreaseCount() {
+    this.count--;
+  }
+
+  IncreaseCount() {
+    this.count++;
+    if(this.count === 10) {
+      alert('increased to 10 count from comp1')
+    }
   }
 
 }
