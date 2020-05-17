@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background: aquamarine;
+}
+button{
+    outline: none;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.col-white{
+    color: #fff;
+}
+.col-black{
+    color: #000;
+}

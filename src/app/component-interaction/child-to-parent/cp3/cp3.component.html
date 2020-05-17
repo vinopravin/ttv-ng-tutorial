@@ -1,0 +1,19 @@
+<div class="com-2-div">
+    <h1>Child Container (Comp 3)</h1>
+    <div class="counter-div">
+        <button class="btn" (click)="DecreaseCount()">
+            <svg class="bi bi-dash-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zM4 7.5a.5.5 0 000 1h8a.5.5 0 000-1H4z" clip-rule="evenodd" />
+            </svg>
+        </button>
+
+        <span class="counter-value"> {{ counterValue }} </span>
+
+        <button class="btn" (click)="IncreaseCount()">
+            <svg class="bi bi-plus-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z"
+                    clip-rule="evenodd" />
+            </svg>
+        </button>
+    </div>
+</div>
