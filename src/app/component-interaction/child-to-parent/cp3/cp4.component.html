@@ -1,5 +1,7 @@
-<div class="main-container">
-    <h1 class="ws-100p">Parent Container (Comp 1)</h1>
+<div class="com-2-div">
+    <h1>Child Container (Comp 3)</h1>
+    <!-- <h5>counter value is <span class="col-white"> {{ counterValue }} </span></h5> -->
+
     <div class="counter-div">
         <button class="btn" (click)="DecreaseCount()">
             <svg class="bi bi-dash-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -7,7 +9,7 @@
             </svg>
         </button>
 
-        <span class="counter-value"> {{ count }} </span>
+        <span class="counter-value"> {{ counterValue }} </span>
 
         <button class="btn" (click)="IncreaseCount()">
             <svg class="bi bi-plus-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -16,17 +18,4 @@
             </svg>
         </button>
     </div>
-
-    <!-- child component 2 injection -->
-    <app-component2 [counterValue]="count" class="min-container"></app-component2>
-    <!-- child component -->
-
-    <!-- child component 2 injection @method 2 using local variable -->
-    <!-- <app-component2 [counterValue]="count" class="min-container" #child></app-component2> -->
-    <!-- child component -->
-   
-    <!-- child component 2 injection -->
-    <app-component3 [counterValue]="count" class="min-container"></app-component3>
-    <!-- child component -->
-
 </div>

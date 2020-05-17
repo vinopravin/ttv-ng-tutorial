@@ -1,6 +1,6 @@
 .main-container{
     height: 100%;
-    background: #009baf;
+    background: #FFCA28;
     padding: 15px;
 }
 .ws-100p{
@@ -12,13 +12,16 @@
     justify-content: center;
     margin: 30px 0;
 }
-.counter-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+.m-30{
     margin: 30px 0;
 }
-.counter-value{
-    font-size: 3em;
+.m-15{
+    margin: 15px 0;
+}
+
+.text-center{
+    text-align: center;
+}
+body{
+    height: 100%
 }
