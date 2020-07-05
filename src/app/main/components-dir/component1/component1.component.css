@@ -1,5 +1,6 @@
 .main-container{
     height: 100%;
+    height: -webkit-fill-available;
     background: #009baf;
     padding: 15px;
 }

@@ -5,13 +5,9 @@ import { routes } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { Component1Component } from './component-interaction/parent-to-child/component1/component1.component';
-import { Component2Component } from './component-interaction/parent-to-child/component2/component2.component';
-import { Component3Component } from './component-interaction/parent-to-child/component3/component3.component';
-import { Cp1Component } from './component-interaction/child-to-parent/cp1/cp1.component';
-import { Cp2Component } from './component-interaction/child-to-parent/cp2/cp2.component';
-import { Cp3Component } from './component-interaction/child-to-parent/cp3/cp3.component';
-
+import { Component1Component } from './main/components-dir/component1/component1.component';
+import { Component2Component } from './main/components-dir/component2/component2.component';
+import { Component3Component } from './main/components-dir/component3/component3.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +15,6 @@ import { Cp3Component } from './component-interaction/child-to-parent/cp3/cp3.co
     Component1Component,
     Component2Component,
     Component3Component,
-    Cp1Component,
-    Cp2Component,
-    Cp3Component,
   ],
   imports: [
     BrowserModule,
