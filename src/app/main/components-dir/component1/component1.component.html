@@ -1,7 +1,7 @@
 <div class="main-container">
     <h1 class="ws-100p">Parent Container (Comp 1)</h1>
     <div class="counter-div">
-        <button class="btn" (click)="DecreaseCount()">
+        <button class="btn" (click)="DecreaseCount()"  #increaseBtn>
             <svg class="bi bi-dash-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zM4 7.5a.5.5 0 000 1h8a.5.5 0 000-1H4z" clip-rule="evenodd" />
             </svg>
@@ -19,9 +19,7 @@
 
     <!-- child component 2 injection -->
     <app-component2 [counterValue]="count" class="min-container">
-        <h5>counter value is <span class="col-white"> {{ count }} </span></h5>
-        <h2 class="title">Hello From Parent</h2>
-        <h2 class="footer">Thanks For Watching!</h2>
+        <h5 style="text-align: center;">counter value is <span class="col-white"> {{ count }} </span></h5>
     </app-component2>
     <!-- child component -->
 

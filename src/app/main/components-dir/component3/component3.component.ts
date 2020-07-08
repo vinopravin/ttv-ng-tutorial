@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 
 @Component({
     selector: 'app-component3',
@@ -22,4 +22,37 @@ export class Component3Component {
     }
 
     constructor() { }
+
+    ngOnChanges(changes: SimpleChanges): void {
+        console.log('%c OnChanges', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngOnInit(): void {
+        console.log('%c OnInit', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngDoCheck(): void {
+        console.log('%c DoCheck', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngAfterContentInit(): void {
+        console.log('%c AfterContentInit', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngAfterContentChecked(): void {
+        console.log('%c AfterContentChecked', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngAfterViewInit(): void {
+        console.log('%c AfterViewInit', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngAfterViewChecked(): void {
+        console.log('%c AfterViewChecked', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
+    ngOnDestroy(): void {
+        console.log('%c OnDestroy', 'background: #28a745;color: white;padding: 5px 2px;margin-left: 30px;')
+        debugger
+    }
 }
